@@ -1,0 +1,120 @@
+.card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 268px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.favoriteBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.favoriteIcon {
+  width: 18px;
+  height: 18px;
+  stroke: #fff;
+  fill: transparent;
+  transition:
+    fill 0.2s,
+    stroke 0.2s;
+}
+
+.favoriteIconActive {
+  fill: #3470ff;
+  stroke: #3470ff;
+}
+
+.body {
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #101828;
+}
+
+.accent {
+  color: #3470ff;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #101828;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+  color: #8e929a;
+  font-size: 12px;
+}
+
+.tag {
+  font-size: 12px;
+  color: #8d929a;
+  padding: 0;
+  background: none;
+}
+
+.tag:not(:last-child)::after {
+  content: "|";
+  margin-left: 4px;
+  color: #8e929a;
+}
+
+.readMoreBtn {
+  margin-top: auto;
+  width: 100%;
+  padding: 14px;
+  background: #3470ff;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  margin-top: 28px;
+}
+
+.readMoreBtn:hover {
+  background: #0b44cd;
+}

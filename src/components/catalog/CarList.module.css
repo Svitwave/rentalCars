@@ -1,0 +1,36 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px 32px;
+}
+
+.loadMoreWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 124px;
+}
+
+.loadMoreBtn {
+  background: transparent;
+  color: #101828;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s;
+  border: 1px solid #3470ff;
+  border-radius: 12px;
+  padding: 12px 51px;
+}
+
+.loadMoreBtn:hover {
+  border: 1px solid #0b44cd;
+}
+
+.empty {
+  text-align: center;
+  color: #8e929a;
+  font-size: 16px;
+  padding: 60px 0;
+  grid-column: 1 / -1;
+}

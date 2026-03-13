@@ -1,0 +1,39 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 64px);
+  gap: 16px;
+}
+
+.code {
+  font-size: 96px;
+  font-weight: 700;
+  color: #3470ff;
+  line-height: 1;
+}
+
+.message {
+  font-size: 24px;
+  color: #101828;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 44px;
+  background: #3470ff;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.link:hover {
+  background: #0b44cd;
+}

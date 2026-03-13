@@ -1,0 +1,33 @@
+.header {
+  border-bottom: 1px solid #dadde1;
+  background: #f2f4f7;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 120px;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #101828;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #0b44cd;
+}
+
+.active {
+  color: #0b44cd;
+}

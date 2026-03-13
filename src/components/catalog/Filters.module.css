@@ -1,0 +1,152 @@
+.filters {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 84px;
+  margin-bottom: 56px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 400;
+  color: #8d929a;
+}
+
+.selectBtn {
+  height: 44px;
+  min-width: 204px;
+  border: 1px solid #dadde1;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #101828;
+  background: #f7f7f7;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+}
+
+.selectBtn:focus {
+  outline: none;
+  border-color: #3470ff;
+}
+
+.selectPlaceholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #101828;
+}
+
+.selectValue {
+  color: #101828;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #f7f7f7;
+  border-radius: 12px;
+  padding: 8px 0;
+  list-style: none;
+  margin: 0;
+  z-index: 100;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.02);
+}
+
+.dropdownItem {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #8d929a;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.dropdownItem:hover {
+  font-weight: 500;
+  color: #101828;
+}
+
+.dropdownItemActive {
+  font-weight: 600;
+  color: #101828;
+}
+
+.mileageWrapper {
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  border-radius: 12px;
+  height: 44px;
+  overflow: hidden;
+  border: 1px solid #dadde1;
+}
+
+.mileageField {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 4px;
+}
+
+.mileageField:first-child {
+  border-right: 1px solid #dadde1;
+}
+
+.mileagePrefix {
+  font-size: 16px;
+  font-weight: 500;
+  color: #101828;
+  white-space: nowrap;
+}
+
+.mileageInput {
+  width: 80px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #101828;
+  font-family: inherit;
+}
+
+.mileageInput:focus {
+  outline: none;
+}
+
+.searchBtn {
+  height: 44px;
+  background: #3470ff;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+  padding: 12px 51px;
+}
+
+.searchBtn:hover {
+  background: #0b44cd;
+}

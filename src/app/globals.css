@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-dark: #101828;
+  --color-primary: #3470FF;
+  --color-primary-dark: #0B44CD;
+  --color-gray: #8E929A;
+  --color-border: #DADDE1;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  color: #101828;
+  background-color: #fff;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+}
