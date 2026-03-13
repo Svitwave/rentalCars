@@ -4,7 +4,7 @@ A modern web application for renting cars, built with Next.js and TypeScript.
 
 ## 🌐 Live Demo
 
-[View on Vercel](https://your-deployment-url.vercel.app) ← замінити після деплою
+[View on Vercel](https://rental-cars-gamma-six.vercel.app/) ← замінити після деплою
 
 ## 📋 Description
 
@@ -63,7 +63,7 @@ src/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/rental-car.git
+git clone https://github.com/Svitwave/rentalCars.git
 cd rental-car
 ```
 
@@ -99,8 +99,8 @@ The app uses a ready-made backend API:
 ## 👤 Author
 
 **Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [your-linkedin](https://linkedin.com/in/your-linkedin)
+- GitHub: [@Svitwave](https://github.com/your-username)
+- LinkedIn: [Svitwave](https://linkedin.com/in/your-linkedin)
 
 ## 📄 License
 
