@@ -27,7 +27,7 @@ export const useCarStore = create<CarStore>()(
       cars: [],
       totalPages: 1,
       currentPage: 1,
-      isLoading: false,
+      isLoading: true,
 
       filters: {},
       setFilters: (filters) => set({ filters }),
@@ -52,7 +52,7 @@ export const useCarStore = create<CarStore>()(
           set({
             cars: data.cars,
             totalPages: data.totalPages,
-            currentPage: data.page,
+            currentPage: Number(data.page),
           });
         } finally {
           set({ isLoading: false });
@@ -68,7 +68,7 @@ export const useCarStore = create<CarStore>()(
           set({
             cars: [...cars, ...data.cars],
             totalPages: data.totalPages,
-            currentPage: data.page,
+            currentPage: Number(data.page),
           });
         } finally {
           set({ isLoading: false });
@@ -80,6 +80,6 @@ export const useCarStore = create<CarStore>()(
     {
       name: "rental-car-storage",
       partialize: (state) => ({ favorites: state.favorites }),
-    }
-  )
+    },
+  ),
 );

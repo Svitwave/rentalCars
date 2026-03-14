@@ -4,6 +4,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .imageWrapper {
@@ -46,7 +47,7 @@
 }
 
 .body {
-  padding-top: 16px;
+  padding: 16px 0 28px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -63,6 +64,11 @@
   font-size: 16px;
   font-weight: 500;
   color: #101828;
+  flex: 1;
+  margin-right: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .accent {
@@ -98,7 +104,7 @@
 }
 
 .readMoreBtn {
-  margin-top: auto;
+  /* margin-top: auto; */
   width: 100%;
   padding: 14px;
   background: #3470ff;
@@ -112,7 +118,6 @@
   text-align: center;
   display: block;
   text-decoration: none;
-  margin-top: 28px;
 }
 
 .readMoreBtn:hover {

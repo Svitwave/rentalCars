@@ -29,8 +29,8 @@
   background: linear-gradient(
     to right,
     transparent 0%,
-    #DADDE1 20%,
-    #DADDE1 80%,
+    #dadde1 20%,
+    #dadde1 80%,
     transparent 100%
   );
   margin-top: 4px;
@@ -47,7 +47,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #3470FF;
+  background-color: #3470ff;
   animation: bounce 0.6s ease-in-out infinite alternate;
 }
 
@@ -60,11 +60,21 @@
 }
 
 @keyframes drive {
-  0% { transform: translateX(-60px); }
-  100% { transform: translateX(320px); }
+  0% {
+    transform: translateX(-60px);
+  }
+  100% {
+    transform: translateX(320px);
+  }
 }
 
 @keyframes bounce {
-  from { transform: translateY(0); opacity: 0.4; }
-  to { transform: translateY(-6px); opacity: 1; }
+  from {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  to {
+    transform: translateY(-6px);
+    opacity: 1;
+  }
 }

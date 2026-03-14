@@ -56,13 +56,11 @@ export default function CarCard({ car }: CarCardProps) {
           <span className={css.tag}>{car.rentalCompany}</span>
           <span className={css.tag}>{car.type}</span>
           <span className={css.tag}>{formatMileage(car.mileage)} km</span>
-          <span className={css.tag}>{car.fuelConsumption}</span>
         </div>
-
-        <Link href={`/catalog/${car.id}`} className={css.readMoreBtn}>
-          Read more
-        </Link>
       </div>
+      <Link href={`/catalog/${car.id}`} className={css.readMoreBtn}>
+        Read more
+      </Link>
     </div>
   );
 }
