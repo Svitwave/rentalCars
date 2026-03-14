@@ -10,7 +10,8 @@
 .imageWrapper {
   position: relative;
   width: 100%;
-  height: 268px;
+  aspect-ratio: 276 / 268;
+  border-radius: 14px;
   overflow: hidden;
 }
 
@@ -18,6 +19,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .favoriteBtn {

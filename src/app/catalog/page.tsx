@@ -10,7 +10,7 @@ export default function CatalogPage() {
 
   useEffect(() => {
     fetchCars(filters, 1);
-  }, []);
+  }, [fetchCars, filters]);
 
   return (
     <div className="container">

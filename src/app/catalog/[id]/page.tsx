@@ -11,9 +11,7 @@ interface Props {
 export default async function CarDetailsPage({ params }: Props) {
   const { id } = await params;
   const car = await getCarById(id);
-
-  const formatMileage = (mileage: number) =>
-    new Intl.NumberFormat().format(mileage);
+  const [, city, country] = car.address.split(",").map((part) => part.trim());
 
   return (
     <div className={css.page}>
@@ -47,11 +45,10 @@ export default async function CarDetailsPage({ params }: Props) {
               <div className={css.meta}>
                 <span className={css.metaItem}>
                   <Icon id="location" width={12} height={15} />
-                  {car.address.split(",")[1]?.trim()},{" "}
-                  {car.address.split(",")[2]?.trim()}
+                  {city}, {country}
                 </span>
                 <span className={css.metaItem}>
-                  Mileage: {formatMileage(car.mileage)} km
+                  Mileage: {car.mileage.toLocaleString("uk-UA")} km
                 </span>
               </div>
             </div>

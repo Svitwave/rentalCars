@@ -15,8 +15,8 @@ export default function CarCard({ car }: CarCardProps) {
   const { toggleFavorite, isFavorite } = useCarStore();
   const favorite = isFavorite(car.id);
 
-  const formatMileage = (mileage: number) =>
-    new Intl.NumberFormat().format(mileage);
+  const [, city, country] = car.address.split(",").map((part) => part.trim());
+  const handleFavorite = () => toggleFavorite(car);
 
   return (
     <div className={css.card}>
@@ -24,7 +24,7 @@ export default function CarCard({ car }: CarCardProps) {
       <div className={css.imageWrapper}>
         <Image
           src={car.img}
-          alt={`${car.brand} ${car.model}`}
+          alt={`${car.brand} ${car.model}  ${car.year}`}
           fill
           className={css.image}
           sizes="(max-width: 1440px) 25vw, 360px"
@@ -32,8 +32,8 @@ export default function CarCard({ car }: CarCardProps) {
 
         <button
           className={css.favoriteBtn}
-          onClick={() => toggleFavorite(car)}
-          aria-label="Toggle favorite"
+          onClick={handleFavorite}
+          aria-label={favorite ? "Remove from favorites" : "Add to favorites"}
         >
           <Icon id={favorite ? "like2" : "like"} width={18} height={18} />
         </button>
@@ -51,11 +51,13 @@ export default function CarCard({ car }: CarCardProps) {
 
         {/* Теги */}
         <div className={css.tags}>
-          <span className={css.tag}>{car.address.split(",")[1]?.trim()}</span>
-          <span className={css.tag}>{car.address.split(",")[2]?.trim()}</span>
+          <span className={css.tag}>{city}</span>
+          <span className={css.tag}>{country}</span>
           <span className={css.tag}>{car.rentalCompany}</span>
           <span className={css.tag}>{car.type}</span>
-          <span className={css.tag}>{formatMileage(car.mileage)} km</span>
+          <span className={css.tag}>
+            {car.mileage.toLocaleString("uk-UA")} km
+          </span>
         </div>
       </div>
       <Link href={`/catalog/${car.id}`} className={css.readMoreBtn}>
