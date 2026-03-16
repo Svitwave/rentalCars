@@ -1,0 +1,75 @@
+.react-datepicker {
+  border-radius: 12px;
+  border: 1px solid #3470ff;
+  padding: 12px;
+  font-family: inherit;
+}
+
+.react-datepicker__header {
+  background: transparent;
+  border-bottom: none;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: #3470ff;
+}
+
+.react-datepicker__current-month {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 0 12px;
+}
+
+.react-datepicker__day-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8d929a;
+  width: 36px;
+  height: 16px;
+}
+.react-datepicker__day-names {
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #3470ff;
+}
+
+.react-datepicker__day {
+  width: 36px;
+  line-height: 32px;
+  border-radius: 32%;
+  color: #101828;
+}
+
+.react-datepicker__day--selected {
+  background: #3470ff;
+  color: white;
+}
+
+.react-datepicker__day:hover {
+  background: #3470ff;
+  border-radius: 32%;
+}
+/* майбутні дати — нормальний ховер */
+.react-datepicker__day:not(.react-datepicker__day--disabled):hover {
+  background: #3470ff;
+  color: #fff;
+  border-radius: 32%;
+}
+/* минулі дати — сірі без ховера */
+.react-datepicker__day--disabled {
+  color: #dadde1;
+  cursor: default;
+}
+
+.react-datepicker__day--disabled:hover {
+  background: transparent;
+}
+
+.input {
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid #dcdcdc;
+  padding: 0 16px;
+}

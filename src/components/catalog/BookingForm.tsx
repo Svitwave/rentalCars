@@ -4,6 +4,8 @@ import { useState } from "react";
 import css from "./BookingForm.module.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import "./DatePicker.css";
+import { enGB } from "date-fns/locale";
 
 export default function BookingForm() {
   const [name, setName] = useState("");
@@ -87,6 +89,7 @@ export default function BookingForm() {
             placeholderText="Booking date*"
             dateFormat="dd.MM.yyyy"
             minDate={new Date()}
+            locale={enGB}
             className={`${css.input} ${errors.date ? css.inputError : ""}`}
           />
           {errors.date && <span className={css.error}>{errors.date}</span>}

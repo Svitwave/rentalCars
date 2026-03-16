@@ -76,24 +76,24 @@ export default async function CarDetailsPage({ params }: Props) {
               {/* Блок 5: характеристики */}
               <div className={css.section}>
                 <h2 className={css.sectionTitle}>Car Specifications:</h2>
-                <div className={css.specs}>
-                  <div className={css.specItem}>
+                <ul className={css.specs}>
+                  <li className={css.specItem}>
                     <Icon id="Brandcalendar" width={16} height={16} />
                     Year: {car.year}
-                  </div>
-                  <div className={css.specItem}>
+                  </li>
+                  <li className={css.specItem}>
                     <Icon id="car" width={16} height={16} />
                     Type: {car.type}
-                  </div>
-                  <div className={css.specItem}>
+                  </li>
+                  <li className={css.specItem}>
                     <Icon id="fuel" width={16} height={16} />
                     Fuel Consumption: {car.fuelConsumption}
-                  </div>
-                  <div className={css.specItem}>
+                  </li>
+                  <li className={css.specItem}>
                     <Icon id="engine" width={16} height={16} />
                     Engine Size: {car.engineSize}
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
 
               {/* Блок 6: аксесуари */}

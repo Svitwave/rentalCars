@@ -50,15 +50,13 @@ export default function CarCard({ car }: CarCardProps) {
         </div>
 
         {/* Теги */}
-        <div className={css.tags}>
-          <span className={css.tag}>{city}</span>
-          <span className={css.tag}>{country}</span>
-          <span className={css.tag}>{car.rentalCompany}</span>
-          <span className={css.tag}>{car.type}</span>
-          <span className={css.tag}>
-            {car.mileage.toLocaleString("uk-UA")} km
-          </span>
-        </div>
+        <ul className={css.tags}>
+          <li className={css.tag}>{city}</li>
+          <li className={css.tag}>{country}</li>
+          <li className={css.tag}>{car.rentalCompany}</li>
+          <li className={css.tag}>{car.type}</li>
+          <li className={css.tag}>{car.mileage.toLocaleString("uk-UA")} km</li>
+        </ul>
       </div>
       <Link href={`/catalog/${car.id}`} className={css.readMoreBtn}>
         Read more
